@@ -16,12 +16,31 @@
 4 记住你的账号和密码，很重要，只有这个账号才能有权限操作阿里云里的业务功能
 4 搜索框搜索短信服务，进行添加签名 和 模板管理
 5 签名：就是短信发送的公司名或者业务 模板管理：短信内容，模板样式
+```
 
-# swiper的安装
-cnpm install vue-awesome-swiper --save
+## 需要引入的包
+``` bash
+  <!-- 阿里云短信验证码 -->
+  <dependency>
+      <groupId>com.aliyun</groupId>
+      <artifactId>aliyun-java-sdk-core</artifactId>
+      <version>4.5.0</version>
+  </dependency>
+  <!-- 阿里巴巴的json处理 -->
+  <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.62</version>
+  </dependency>
+  <!-- redis -->
+  <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+  </dependency>
+```
 
-# element 安装
-cnpm i element-ui -S
+## 如何使用
+1. 导入对应的包   <br>
+2. 修改配置文件，在rescources目录下 <br>
+3. 浏览器输入，/home 路径后， 输入手机号，对手机就可以对手机发送验证码。
 
-# 配置完，启动项目
-cnpm r
