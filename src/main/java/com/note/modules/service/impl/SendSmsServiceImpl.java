@@ -49,9 +49,15 @@ public class SendSmsServiceImpl implements SendSmsService {
         //构建请求
         CommonRequest request = new CommonRequest();
         request.setSysMethod(MethodType.POST);
+<<<<<<< HEAD
         request.setSysDomain("dysmsapi.aliyuncs.com");
         request.setSysVersion("2017-05-25");
         request.setSysAction("SendSms");
+=======
+        request.setSysDomain("xxxxxxxxx");
+        request.setSysVersion("xxxxxxxx");
+        request.setSysAction("xxxxxx");
+>>>>>>> 68da45e499ad47fa891683b097ce1f7a8703dcdf
         //自定义参数   手机号 - 短信签名 - 模板样式
         request.putQueryParameter("PhoneNumbers", phone);
         request.putQueryParameter("SignName", signature);
